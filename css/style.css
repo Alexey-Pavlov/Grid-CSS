@@ -4,12 +4,16 @@ body {
 }
 h1 {
   font-size: 72px;
+  margin-top: 0;
+  margin-bottom: 41px;
 }
 h1 + p {
   font-size: 30px;
+  margin: 0;
 }
 h2 {
   font-size: 24px;
+  font-weight: 400;
 }
 p {
   font-size: 36px;
@@ -17,6 +21,10 @@ p {
 a {
   font-size: 18px;
   text-decoration: none;
+  color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  border-radius: 60px;
+  padding: 12px 21px;
 }
 .grid {
   display: grid;
@@ -31,22 +39,34 @@ a {
 .grid-item {
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
 }
 .grid-item-main {
   background-image: url(../img/bg-main.png);
+  background-position: center;
   grid-area: a;
+  height: 890px;
+  padding: 284px 787px 348px 210px;
 }
 .grid-item-red {
   background-image: url(../img/bg-red.png);
+  background-size: cover;
   grid-area: b;
 }
 .grid-item-lgray {
   background-color: #f3f1ef;
   grid-area: c;
+  padding: 0px 198px 0px 55px;
 }
+
+.grid-item-lgray h2 {
+    margin-top: 113px;
+}
+
 .grid-item-pic1 {
   background-image: url(../img/bg-one.png);
   grid-area: d;
+  height: 500px;
 }
 .grid-item-pic2 {
   background-image: url(../img/bg-two.png);
@@ -62,6 +82,8 @@ a {
 }
 .grid-item-blue-text {
   grid-area: h;
+  padding-left: 209px;
+  padding-right: 120px;
 }
 .grid-item-pic5 {
   background-image: url(../img/bg-five.png);
@@ -73,14 +95,33 @@ a {
 .grid-item-blue {
   background-color: #3f729b;
   color: #fff;
+  
 }
+
+.grid-item-blue h2 {
+    margin-top: 124px;
+}
+
 .grid-item-green {
   background-color: #2ebd59;
   color: #fff;
   grid-area: m;
+  padding-left: 209px;
+  padding-right: 70px;
 }
+
+.grid-item-green h2 {
+    margin-top: 130px;
+}
+
 .grid-item-gray {
   background-color: #282b2f;
   color: #fff;
   grid-area: n;
+  padding-left: 59px;
+  padding-right: 241px;
+}
+
+.grid-item-gray h2 {
+    margin-top: 130px;
 }
